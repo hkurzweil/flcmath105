@@ -4,14 +4,45 @@ numbering:
     offset: 0
 ---
 (fundamentals)=
-# Jupyter Book Fundamentals
+# What are Statistics?
 
-## Anatomy of a Jupyter Book
+## Introduction
 
-A Jupyter Book is a collection of files and folders that together make up the content and structure of your book.
-Jupyter Book 2 (JB2) supports both [Markdown](https://en.wikipedia.org/wiki/Markdown) files and [Jupyter Notebooks](https://en.wikipedia.org/wiki/Project_Jupyter#Jupyter_Notebook) as content sources. 
-The structure of the book is specified in the `myst.yml` file, which is located in the root directory of your book.
-This file contains information about the title, author, and other metadata of the book, as well as documents and its structure to build the book itself.
+The science of statistics deals with the collection, analysis, interpretation, and presentation of data. We see and use data in our everyday lives.  One of the goals of this class is to help you learn to pay attention to the data all around you, and the statistics produced from them. 
+
+In statistics, we would love to study an entire population. You can think of a population as the whole collection of persons, things, or objects under study. However, studying every person, for example, is nearly (if not absolutely) impossible. So, to study the population, we almost always select a sample from that population. The idea of sampling is to select a portion (or subset) of the larger population and study that portion (the sample) to gain information about the population. Data are the result of sampling from a population.
+
+Why would we want to sample? Why not just collect the data from the whole population? Populations tend to be very large, like all US residents, or all automobiles. It is very difficult, expensive, and time-consuming, to collect data from so many subjects. Maybe you would like to know the average number of siblings of a Fort Lewis student.  While, yes, you might be able to track down every single student that is enrolled here and ask them, this is really not realistic.  Instead, you would select a sample of students who would tell you how many siblings that they have, calculate the average, then generalize that average to ALL Fort Lewis students. By doing this, you can make an inference about the larger population based on the data from the sample you were able to obtain.
+
+So just what is a statistic? Generally speaking, it is a numerical characteristic of a sample.  For example, finding an ‘average’ is a statistic of the data that it is calculated from. This course will cover many types of statistics, not so much how to calculate them by hand (luckily for all of us!), but more about how to use technology to get them and, more importantly, how to contextually interpret them.  The counterpart to a statistic is called a parameter. A parameter is a numerical characteristic of the population, that can be estimated or inferred by using a statistic.  The average number of siblings of ALL Fort Lewis students would be a parameter.  The average number of siblings of the students who were sampled is a statistic. #TLDR: Statistic is to sample as parameter is to population!
+
+## Variables
+
+A variable is a characteristic or measurement that you wish to study, and collect data about.  Recall from Algebra, a variable must be able to change. If we were interested in the average number of siblings of a Fort Lewis student, the variable we wish to measure (and collect data about) is number of siblings.  Each subject/student who participates in the study would tell the researcher how many siblings that they have. Be sure not to confuse a variable with a constant.  In this study, all of the subjects must be Fort Lewis students in order to participate.  Being a Fort Lewis student would be a constant, rather than a variable.
+
+### Independent versus Dependent Variables
+
+The independent variable has several possible meanings in statistics.  If a variable is being controlled by the researcher, it would be known as an independent variable. We also look to see if the independent variable causes, or affects, changes in the dependent variable. The dependent variable changes in response to the independent variable, The independent variable is also known as the explanatory variable; while the dependent variable is also known as the response variable.  These alternate vocabulary will be discussed when we get to Correlation and Regression.
+
+A die hard baseball fan wants to see if there is a difference in the average number of hits between Babe Ruth and Hank Aaron.  In this situation, the fan would look at the number of hits for each player, where the number of hits depends upon which player it is.  The number of hits would be the dependent variable, while the player (Ruth or Aaron) would be the independent variable.
+
+Situations in statistics do not always have two variables.  Some of the data that we wish to analyze will only have a single variable.  When that is the case, the variable is designated as the dependent (response) variable.  Perhaps someone is interested in whether the height of Fort Lewis students, in inches, differs from the national average height of college students.  In this situation, there is only one variable.  The height of FLC students, in inches, is the dependent variable; this is the only data being collected.  The national average is a statistic being used for comparison, a known value, and would not be a variable.
+
+It is also possible to have three or more variables that you are interested in analyzing.  While you will come across a few situations in this class that have three or more variables, we will not be doing actual analysis of these situations in this course.
+
+
+### Quantitative and Qualitative Variables
+
+In statistics, it is critical to be aware of which type of data that you are working with.  Data can be quantitative, which means that it consists of meaningful numerical values.  Number of hits by a baseball player is quantitative data.  Data can also be qualitative, sometimes known as categorical.  Qualitative data consists of categories or qualities, or sometimes, numbers that have no meaning.  Baseball players would be qualitative. Other qualitative data includes hair color, eye color, favorite type of food. Position that you finish in a race, ie 1st, 2nd, 3rd, etc, is actually qualitative.  Even though it seems like you are collecting numerical values, those values, 1st, 2nd, 3rd, are not actually meaningful.  They are just the categorical name of finishing position.
+
+In this class, you will frequently be asked to identify your variables for various situations.  In general, this means that you will have to state the actual variables, classify as quantitative or qualitative, and if appropriate, designate independent and dependent.  Going back to the baseball situation which was looking for a difference in the average number of hits between Babe Ruth and Hank Aaron, completely defining the variables would be:
+
+- Independent variable: player (Ruth or Aaron), qualitative.
+- Dependent variable: number of runs, quantitative.
+
+### Levels of Measurement (LOM)
+
+
 
 :::{literalinclude} ../../myst.yml
 :start-at: # See docs
